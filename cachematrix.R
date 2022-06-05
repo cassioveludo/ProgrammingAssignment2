@@ -4,7 +4,7 @@
   ## the matrix() function, so we can set a matrix. The function i <- c() creates an empty (NULL) 
   ## objetc i so it can used later to store the inverse matrix. We also use the <<- operator so we can 
   ## assign a value to an object in an environment that is different from the current environment.
-  ## The rest of the funcion evaluates de matrix
+  ## The rest of the function sets the inverse matrix and chaches the result
 
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -25,7 +25,7 @@ makeCacheMatrix <- function(x = matrix()) {
   # The following function calculates the inverse matrix of special "vector" created with the above 
   # function. However, it first checks to see if the the inverse matrix has already been calculated. 
   # If so, it gets the result from the cache and skips the computation. Otherwise, it calculates the 
-  # inverse matrix of the data and sets this valuein the cache via the setinverse function.
+  # inverse matrix of the data and sets this value via the setinverse function.
 
 cacheSolve <- function(x, ...) {
   i <- x$getinverse()
