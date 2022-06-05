@@ -38,15 +38,4 @@ cacheSolve <- function(x, ...) {
   i
 }
 
-#############
-## TESTING ##
-#############
-
-m <- matrix(c(2,4,6,8),2,2)
-m
-
-m_1 <- makeCacheMatrix(m)
-cacheSolve(m_1) 
-
-
 
